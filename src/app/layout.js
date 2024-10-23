@@ -1,3 +1,6 @@
+import Footer from "@/components/Shared/Footer/Footer";
+import Navbar from "@/components/Shared/Navbar/Navbar";
+import { Box } from "@mui/material";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -21,7 +24,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Box sx={{maxWidth:"1280px", margin:"0 auto"}}>
+        <Navbar />
         {children}
+        <Footer />
+        </Box>
       </body>
     </html>
   );
