@@ -1,0 +1,62 @@
+[
+  {
+    "picture": "https://i.ibb.co/mHVgDpw/view-3d-house-model-23-2150761014.jpg",
+    "name": "Modern Family House",
+    "address": "123 Maple Street, Springfield",
+    "tag": "For Sale",
+    "area": "3,000",
+    "bedroomNumbers": 4,
+    "bathNumbers": 3,
+    "price": "$450,000"
+  },
+  {
+    "picture": "https://i.ibb.co/rv7YmTS/three-dimensional-house-model-23-2151003986.jpg",
+    "name": "Luxury Villa",
+    "address": "456 Ocean Drive, Miami Beach",
+    "tag": "For Sale",
+    "area": "5,500",
+    "bedroomNumbers": 6,
+    "bathNumbers": 5,
+    "price": "$2,500,000"
+  },
+  {
+    "picture": "https://i.ibb.co/zP1FRPw/design-a-normal-and-simple-and-low-detailed-office-487986-20159.jpg",
+    "name": "Cozy Cottage",
+    "address": "789 Pine Lane, Aspen",
+    "tag": "For Sale",
+    "area": "1,800",
+    "bedroomNumbers": 3,
+    "bathNumbers": 2,
+    "price": "$350,000"
+  },
+  {
+    "picture": "https://i.ibb.co/wJHW3Y1/beautiful-modern-style-luxury-home-ai-generated-106214-255.jpg",
+    "name": "Urban Apartment",
+    "address": "101 City Center, New York",
+    "tag": "For Sale",
+    "area": "1,200",
+    "bedroomNumbers": 2,
+    "bathNumbers": 1,
+    "price": "$750,000"
+  },
+  {
+    "picture": "https://i.ibb.co/02CQ4DG/3d-house-model-white-background-726120-1747.jpg",
+    "name": "Suburban Home",
+    "address": "202 Greenfield Avenue, Dallas",
+    "tag": "For Sale",
+    "area": "2,500",
+    "bedroomNumbers": 4,
+    "bathNumbers": 3,
+    "price": "$400,000"
+  },
+  {
+    "picture": "https://i.ibb.co/M9StdYL/3d-rendering-abstract-building-23-2150896700.jpg",
+    "name": "Beachside Bungalow",
+    "address": "303 Ocean View, Malibu",
+    "tag": "For Sale",
+    "area": "2,200",
+    "bedroomNumbers": 3,
+    "bathNumbers": 2,
+    "price": "$1,200,000"
+  }
+]
