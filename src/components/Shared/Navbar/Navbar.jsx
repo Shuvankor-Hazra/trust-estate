@@ -2,18 +2,18 @@
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import SearchIcon from '@mui/icons-material/Search';
-import { AppBar, Box, Button, IconButton, Tab, Tabs, Toolbar, useMediaQuery, useTheme } from "@mui/material";
+import { AppBar, Box, Button, Divider, IconButton, Tab, Tabs, Toolbar, useMediaQuery, useTheme } from "@mui/material";
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 import Logo from "../../../../public/Logo (1).png";
 import DrawerComponent from './DrawerComponent';
-import Link from 'next/link';
 
 const Pages = ["Home", "Property", "Blog", "Page", "Contact"];
 const Routes = ["/", "/property", "/blog", "/page", "/contact"];
 
 const Navbar = () => {
-    const [value, setValue] = useState();
+    const [value, setValue] = useState(0);
     const theme = useTheme();
     console.log(theme);
     const isMatch = useMediaQuery(theme.breakpoints.down('md'));
@@ -27,9 +27,11 @@ const Navbar = () => {
 
     return (
         <>
-            <AppBar style={{ background: "#ffffff", boxShadow: "none", padding: "10px 0" }} position='sticky'>
+            <AppBar style={{ background: "#ffffff", color: "black", boxShadow: "none", padding: "32px 0" }} position='sticky'>
                 <Toolbar>
-                    <Image src={Logo} alt='Logo' />
+                    <Link href={"/#"}>
+                        <Image src={Logo} alt='Logo' width={193} height={48} />
+                    </Link>
                     {
                         isMatch ? (
                             <Box sx={{ marginLeft: "auto", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "10px" }}>
@@ -43,10 +45,11 @@ const Navbar = () => {
                             </Box>
                         ) : (
                             <>
+                                <Divider orientation="vertical" variant='middle' flexItem sx={{ paddingX: "20px" }} />
                                 <Tabs
                                     onChange={(e, value) => setValue(value)}
                                     value={value}
-                                    sx={{ marginLeft: "40px", color: "black" }}
+                                    sx={{ marginLeft: "20px", }}
                                     textColor="inherit"
                                     indicatorColor="secondary"
                                 >
@@ -56,7 +59,7 @@ const Navbar = () => {
                                             component={Link}
                                             href={Routes[idx]}
                                             label={page}
-                                            sx={{ textDecoration: 'none' }}
+                                            sx={{ textDecoration: 'none', fontSize: "18px", fontWeight: "500", }}
                                         />
                                     ))}
                                 </Tabs>
@@ -67,8 +70,8 @@ const Navbar = () => {
                                     <IconButton onClick={handleToggleMode} >
                                         {darkMode ? <DarkModeIcon /> : <LightModeIcon />}
                                     </IconButton>
-                                    <Button variant='outlined' sx={{ color: "black", borderColor: "black" }}>Login</Button>
-                                    <Button variant='contained' sx={{ bgcolor: "#F46A07" }}>Sign up</Button>
+                                    <Button variant='outlined' size='large' sx={{ color: "black", borderColor: "black" }}>Login</Button>
+                                    <Button variant='contained' size='large' sx={{ bgcolor: "#F46A07" }}>Sign up</Button>
                                 </Box>
                             </>
                         )

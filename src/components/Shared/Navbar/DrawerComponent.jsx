@@ -8,11 +8,10 @@ const Routes = ["/", "/property", "/blog", "/page", "/contact", "/login", "/logo
 
 const DrawerComponent = () => {
     const [openDrawer, setOpenDrawer] = useState(false);
-
     return (
         <>
             <Drawer
-                PaperProps={{ sx: { width: "250px", padding: "10px" } }}
+                PaperProps={{ sx: { width: "200px", padding: "5px" } }}
                 open={openDrawer}
                 onClose={() => setOpenDrawer(false)}
             >

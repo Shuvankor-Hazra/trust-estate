@@ -4,6 +4,7 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import Image from "next/image";
 
 const LatestBlogs = () => {
   return (
