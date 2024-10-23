@@ -27,8 +27,8 @@ export default function RootLayout({ children }) {
         <Box sx={{maxWidth:"1280px", margin:"0 auto"}}>
         <Navbar />
         {children}
-        <Footer />
         </Box>
+        <Footer />
       </body>
     </html>
   );
