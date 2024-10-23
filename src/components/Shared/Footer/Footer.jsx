@@ -6,6 +6,8 @@ import XIcon from '@mui/icons-material/X';
 import { Divider, FormControl, IconButton, TextField, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import Image from 'next/image';
+import Logo from "../../../../public/Logo (1).png"
 
 const Legal = [
     {
@@ -82,8 +84,9 @@ const Footer = () => {
                 <Grid container sx={{ maxWidth: "1280px", margin: "0 auto" }}>
                     {/* First col */}
                     <Grid xs={12} lg={3}>
-                        <Box sx={{ paddingRight: "40px" }}>
-                            <img src={`${process.env.PUBLIC_URL}../..//Logo (1).png`} alt="Logo" />
+                        <Box sx={{ padding: "20px" }}>
+                            {/* <img src={`${process.env.PUBLIC_URL}../../Logo (1).png`} alt="Logo" /> */}
+                            <Image src={Logo} alt='Logo' />
                             <Typography sx={{ marginTop: "15px" }}>
                                 4140 Parker Rd. Allentown,
                             </Typography>
@@ -117,9 +120,9 @@ const Footer = () => {
                     {/* <Divider orientation="vertical" flexItem /> */}
                     {/* Second col */}
                     <Grid xs={12} lg={6}>
-                        <Box>
+                        <Box sx={{ padding: "20px" }}>
                             <Grid container>
-                                <Grid xs={4}>
+                                <Grid xs={6} md={4}>
                                     <Typography sx={{ fontSize: "24px", fontWeight: "500" }}>
                                         Company
                                     </Typography>
@@ -129,7 +132,7 @@ const Footer = () => {
                                         ))}
                                     </Box>
                                 </Grid>
-                                <Grid xs={4}>
+                                <Grid xs={6} md={4}>
                                     <Typography sx={{ fontSize: "24px", fontWeight: "500" }}>
                                         Top City
                                     </Typography>
@@ -139,7 +142,7 @@ const Footer = () => {
                                         ))}
                                     </Box>
                                 </Grid>
-                                <Grid xs={4}>
+                                <Grid xs={6} md={4}>
                                     <Typography sx={{ fontSize: "24px", fontWeight: "500" }}>
                                         Legal
                                     </Typography>
@@ -154,7 +157,7 @@ const Footer = () => {
                     </Grid>
                     {/* Third col */}
                     <Grid xs={12} lg={3}>
-                        <Box>
+                        <Box sx={{ padding: "10px 5px" }}>
                             <Typography sx={{ fontSize: "26px", fontWeight: "500" }}>
                                 Subscribe Our Newsletter
                             </Typography>

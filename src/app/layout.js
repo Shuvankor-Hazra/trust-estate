@@ -26,6 +26,8 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Box sx={{maxWidth:"1280px", margin:"0 auto"}}>
         <Navbar />
+        </Box>
+        <Box sx={{maxWidth:"1280px", margin:"0 auto", minHeight: "calc(100vh - 550px)" }}>
         {children}
         </Box>
         <Footer />
