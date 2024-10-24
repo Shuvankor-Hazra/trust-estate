@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <Box sx={{maxWidth:"1280px", margin:"0 auto"}}>
         <Navbar />
         </Box>
-        <Box sx={{maxWidth:"1280px", margin:"0 auto", minHeight: "calc(100vh - 550px)" }}>
+        <Box sx={{maxWidth:"1280px", margin:"0 auto", minHeight: "calc(100vh - 600px)" }}>
         {children}
         </Box>
         <Footer />
