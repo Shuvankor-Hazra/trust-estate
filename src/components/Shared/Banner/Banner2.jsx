@@ -6,7 +6,7 @@ const Banner2 = ({ textUp, textDown }) => {
         <Box
             sx={{
                 marginBottom: "120px",
-                height: { xs: '450px', md: '600px' }, // Adjust height for mobile
+                height: { xs: '450px', md: '600px' },
                 borderRadius: "40px",
                 display: 'flex',
                 justifyContent: 'center',
@@ -35,17 +35,17 @@ const Banner2 = ({ textUp, textDown }) => {
                     color='white'
                     sx={{
                         borderRadius: "28px",
-                        fontSize: { xs: "12px", md: "16px" }, // Adjust font size for mobile
-                        padding: { xs: "5px 10px", md: "10px 20px" } // Adjust padding for mobile
+                        fontSize: { xs: "12px", md: "16px" },
+                        padding: { xs: "5px 10px", md: "10px 20px" }
                     }}
                 >
                     Looking for more?
                 </Button>
                 <Typography
                     sx={{
-                        fontSize: { xs: "40px", md: "70px" }, // Adjust font size for mobile
+                        fontSize: { xs: "40px", md: "70px" },
                         fontWeight: "700",
-                        marginY: { xs: 2, md: 4 } // Adjust margin for spacing on mobile
+                        marginY: { xs: 2, md: 4 }
                     }}
                     gutterBottom
                 >
@@ -55,8 +55,8 @@ const Banner2 = ({ textUp, textDown }) => {
                 <Box sx={{ display: "flex", justifyContent: "center" }}>
                     <Box sx={{
                         display: "flex",
-                        flexDirection: { xs: "column", md: "row" }, // Stack buttons vertically on mobile
-                        gap: { xs: 2, md: 2 }, // Adjust spacing between buttons for mobile
+                        flexDirection: { xs: "column", md: "row" },
+                        gap: { xs: 2, md: 2 },
                         alignItems: "center"
                     }}>
                         <Button
@@ -64,10 +64,10 @@ const Banner2 = ({ textUp, textDown }) => {
                             size='large'
                             sx={{
                                 bgcolor: "#F46A07",
-                                fontSize: { xs: "16px", md: "18px" }, // Adjust font size for mobile
+                                fontSize: { xs: "16px", md: "18px" },
                                 borderRadius: "10px",
                                 textTransform: 'capitalize',
-                                padding: { xs: "10px 15px", md: "10px 20px" } // Adjust padding for mobile
+                                padding: { xs: "10px 15px", md: "10px 20px" }
                             }}
                         >
                             <Typography sx={{ fontSize: { xs: "16px", md: "18px" } }}>

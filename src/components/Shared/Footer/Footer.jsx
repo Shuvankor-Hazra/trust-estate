@@ -8,6 +8,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Image from 'next/image';
 import Logo from "../../../../public/Logo (1).png"
+import Link from 'next/link';
 
 const Legal = [
     {
@@ -86,7 +87,9 @@ const Footer = () => {
                     <Grid xs={12} lg={3}>
                         <Box sx={{ padding: "20px" }}>
                             {/* <img src={`${process.env.PUBLIC_URL}../../Logo (1).png`} alt="Logo" /> */}
-                            <Image src={Logo} alt='Logo' />
+                            <Link href={"/#"}>
+                                <Image src={Logo} alt='Logo' width={193} height={48} />
+                            </Link>
                             <Typography sx={{ marginTop: "15px" }}>
                                 4140 Parker Rd. Allentown,
                             </Typography>
