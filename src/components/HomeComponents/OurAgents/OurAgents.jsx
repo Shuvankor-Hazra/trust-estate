@@ -1,10 +1,11 @@
-import { Box, Grid, Typography } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import image1 from "../../../assets/images/clientOne.png";
-import image2 from "../../../assets/images/clientTwo.png";
-import image3 from "../../../assets/images/clientThree.png";
-import image4 from "../../../assets/images/clientFoue.png";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import Image from "next/image";
+import image4 from "../../../assets/images/clientFoue.png";
+import image1 from "../../../assets/images/clientOne.png";
+import image3 from "../../../assets/images/clientThree.png";
+import image2 from "../../../assets/images/clientTwo.png";
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 const OurAgents = () => {
   return (
@@ -161,6 +162,51 @@ const OurAgents = () => {
           </Grid>
         </Grid>
       </Box>
+
+      {/* Banner */}
+      <Box
+        sx={{
+          bgcolor: "#F46A07",
+          color: "white",
+          padding: { xs: "20px", md: "40px 48px" },
+          borderRadius: "16px",
+          marginTop: { xs: "30px", md: "90px" },
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            alignItems: "center",
+            justifyContent: "space-between",
+            textAlign: { xs: "center", md: "left" },
+          }}
+        >
+          <Typography sx={{ fontSize: { xs: "24px", md: "36px" }, fontWeight: "500" }}>
+            Do you want to become an agent?
+          </Typography>
+          <Button
+            variant='contained'
+            size='large'
+            sx={{
+              bgcolor: "#ffffff",
+              color: "#F46A07",
+              fontSize: { xs: "16px", md: "18px" },
+              borderRadius: "10px",
+              marginTop: { xs: "10px", md: 0 },
+              marginLeft: { xs: 0, md: "10px" },
+              textTransform: 'capitalize',
+              padding: { xs: "10px 15px", md: "10px 20px" }
+            }}
+          >
+            <Typography sx={{ fontSize: { xs: "16px", md: "18px" } }}>
+              Register Now
+            </Typography>
+            <ArrowOutwardIcon sx={{ marginLeft: "10px" }} />
+          </Button>
+        </Box>
+      </Box>
+
     </Box>
   );
 };
